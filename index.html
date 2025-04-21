@@ -2,46 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Sohel Rana - Personal Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking the external stylesheet -->
 </head>
 
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
     <!-- Navigation Bar -->
-<nav style="background-color: #f8f8f8; padding: 10px 0;">
-    <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; margin: 0; padding: 0;">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="teaching.html">Teaching Page</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav style="background-color: #f8f8f8; padding: 15px 0;">
+        <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; margin: 0; padding: 0;">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="teaching.html">Teaching Page</a></li>
+        </ul>
+    </nav>
 
-
-    <!-- Main Content -->
+    <!-- Header Section -->
     <header>
-        <div class="profile">
-            <img src="Photo.jpg" alt="Muhammad Sohel Rana" width="120" height="200" style="border-radius: 50% / 40%; border: 2px solid #333;">
-            <div class="profile-info">
+        <div style="display: flex; align-items: flex-start; gap: 40px; padding: 40px;">
+            <!-- Left: Profile Photo + Contact -->
+            <div style="text-align: center;">
+                <img src="Photo.jpg" alt="Muhammad Sohel Rana" width="150" height="200"
+                    style="border-radius: 50% / 40%; border: 2px solid #333; object-fit: cover;" />
+
+                <!-- Contact Info -->
+                <section id="contact" style="margin-top: 20px; text-align: left;">
+                    <h2>📫 Contact</h2>
+                    <p>📧 <a href="mailto:sohel.rana@mavs.uta.edu">sohel.rana@mavs.uta.edu</a></p>
+                    <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">LinkedIn</a></p>
+                    <p>🌐 <a href="https://github.com/msr3384">GitHub</a></p>
+                    <p>🧠 <a href="https://scholar.google.com/citations?user=yourID">Google Scholar</a></p>
+                    <p>📁 <a href="./cv.pdf">Resume/CV</a></p>
+                </section>
+            </div>
+
+            <!-- Right: Profile Info -->
+            <div>
                 <h1>Muhammad Sohel Rana</h1>
-                <p>PhD Candidate in Mathematics-Data Science, University of Texas at Arlington</p>
+                <p><strong>PhD Candidate in Mathematics-Data Science, University of Texas at Arlington</strong></p>
                 <p>Research Focus: Optimal Transport based Dimensionality Reduction, Federated Learning</p>
             </div>
         </div>
     </header>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" style="padding: 0 40px;">
         <h2>Welcome to my personal website!</h2>
-        <p>I'm a PhD candidate in Mathematics-Data Science at the University of Texas at Arlington, with a research focus on **Optimal Transport based dimensionality reduction** and **federated learning**.</p>
+        <p>I'm a PhD candidate in Mathematics-Data Science at the University of Texas at Arlington, with a research focus on <strong>Optimal Transport based dimensionality reduction</strong> and <strong>federated learning</strong>.</p>
     </section>
 
-    <!-- Research Interests Section -->
-    <section id="research">
+    <!-- Research Interests -->
+    <section id="research" style="padding: 0 40px;">
         <h2>🔬 Research Interests</h2>
         <ul>
             <li>Optimal transport for manifold learning and embedding</li>
@@ -50,8 +63,8 @@
         </ul>
     </section>
 
-    <!-- Work & Research Experience Section -->
-    <section id="work">
+    <!-- Work & Research Experience -->
+    <section id="work" style="padding: 0 40px;">
         <h2>💼 Work & Research Experience</h2>
         <ul>
             <li>
@@ -65,13 +78,13 @@
         </ul>
     </section>
 
-    <!-- Teaching Experience Section -->
-    <section id="teaching">
+    <!-- Teaching Experience -->
+    <section id="teaching" style="padding: 0 40px;">
         <h2>👨‍🏫 Teaching Experience</h2>
         <ul>
             <li>
                 <strong>Graduate Teaching Assistant, UT Arlington</strong>
-                <p>Courses: *Introduction to Data Science, Machine Learning, Programming Languages*</p>
+                <p>Courses: <em>Introduction to Data Science, Machine Learning, Programming Languages</em></p>
                 <p>Responsibilities: Led lab sessions, graded assignments, and mentored students.</p>
             </li>
             <li>
@@ -81,20 +94,10 @@
         </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>📫 Contact</h2>
-        <p>📧 Email: <a href="mailto:sohel.rana@mavs.uta.edu">sohel.rana@mavs.uta.edu</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">LinkedIn</a></p>
-        <p>🌐 <a href="https://github.com/msr3384">GitHub</a></p>
-        <p>🧠 <a href="https://scholar.google.com/citations?user=yourID">Google Scholar</a></p>
-        <p>📁 <a href="./cv.pdf">Resume/CV</a></p>
-    </section>
-
-    <footer>
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #f0f0f0;">
         <p>Thanks for visiting!</p>
     </footer>
 </body>
 
 </html>
-
