@@ -2,102 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Sohel Rana - Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Sohel Rana - Personal Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #f8f8f8;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      display: flex;
+      padding: 40px;
+      gap: 60px;
+    }
+
+    .left-column {
+      flex: 0 0 250px;
+      text-align: center;
+    }
+
+    .left-column img {
+      border-radius: 50% / 40%;
+      border: 2px solid #333;
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .right-column {
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-    <!-- Navigation Bar -->
-    <nav style="background-color: #f8f8f8; padding: 15px 0;">
-        <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; margin: 0; padding: 0;">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="teaching.html">Teaching Page</a></li>
-        </ul>
-    </nav>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="teaching.html">Teaching Page</a></li>
+    </ul>
+  </nav>
 
-    <!-- Header Section -->
-    <header>
-        <div style="display: flex; align-items: flex-start; gap: 40px; padding: 40px;">
-            <!-- Left: Profile Photo + Contact -->
-            <div style="text-align: center;">
-                <img src="Photo.jpg" alt="Muhammad Sohel Rana" width="150" height="200"
-                    style="border-radius: 50% / 40%; border: 2px solid #333; object-fit: cover;" />
+  <!-- Main Layout -->
+  <div class="main-container">
+    <!-- Left Column: Photo + Contact -->
+    <div class="left-column">
+      <img src="Photo.jpg" alt="Muhammad Sohel Rana" />
+      <section id="contact" style="text-align: left; margin-top: 20px;">
+        <h2>📫 Contact</h2>
+        <p>📧 <a href="mailto:sohel.rana@mavs.uta.edu">sohel.rana@mavs.uta.edu</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">LinkedIn</a></p>
+        <p>🌐 <a href="https://github.com/msr3384">GitHub</a></p>
+        <p>🧠 <a href="https://scholar.google.com/citations?user=yourID">Google Scholar</a></p>
+        <p>📁 <a href="./cv.pdf">Resume/CV</a></p>
+      </section>
+    </div>
 
-                <!-- Contact Info -->
-                <section id="contact" style="margin-top: 20px; text-align: left;">
-                    <h2>📫 Contact</h2>
-                    <p>📧 <a href="mailto:sohel.rana@mavs.uta.edu">sohel.rana@mavs.uta.edu</a></p>
-                    <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">LinkedIn</a></p>
-                    <p>🌐 <a href="https://github.com/msr3384">GitHub</a></p>
-                    <p>🧠 <a href="https://scholar.google.com/citations?user=yourID">Google Scholar</a></p>
-                    <p>📁 <a href="./cv.pdf">Resume/CV</a></p>
-                </section>
-            </div>
+    <!-- Right Column: Content -->
+    <div class="right-column">
+      <header>
+        <h1>Muhammad Sohel Rana</h1>
+        <p><strong>PhD Candidate in Mathematics-Data Science, University of Texas at Arlington</strong></p>
+        <p>Research Focus: Optimal Transport based Dimensionality Reduction, Federated Learning</p>
+      </header>
 
-            <!-- Right: Profile Info -->
-            <div>
-                <h1>Muhammad Sohel Rana</h1>
-                <p><strong>PhD Candidate in Mathematics-Data Science, University of Texas at Arlington</strong></p>
-                <p>Research Focus: Optimal Transport based Dimensionality Reduction, Federated Learning</p>
-            </div>
-        </div>
-    </header>
+      <section id="about">
+        <h2>👋 Welcome!</h2>
+        <p>
+          I'm a PhD candidate in Mathematics-Data Science at the University of Texas at Arlington, with a research focus on
+          <strong>Optimal Transport based dimensionality reduction</strong> and
+          <strong>federated learning</strong>.
+        </p>
+      </section>
 
-    <!-- About Me Section -->
-    <section id="about" style="padding: 0 40px;">
-        <h2>Welcome to my personal website!</h2>
-        <p>I'm a PhD candidate in Mathematics-Data Science at the University of Texas at Arlington, with a research focus on <strong>Optimal Transport based dimensionality reduction</strong> and <strong>federated learning</strong>.</p>
-    </section>
-
-    <!-- Research Interests -->
-    <section id="research" style="padding: 0 40px;">
+      <section id="research">
         <h2>🔬 Research Interests</h2>
         <ul>
-            <li>Optimal transport for manifold learning and embedding</li>
-            <li>Structure-preserving dimensionality reduction</li>
-            <li>Scalable OT algorithms for high-dimensional data</li>
+          <li>Optimal transport for manifold learning and embedding</li>
+          <li>Structure-preserving dimensionality reduction</li>
+          <li>Scalable OT algorithms for high-dimensional data</li>
         </ul>
-    </section>
+      </section>
 
-    <!-- Work & Research Experience -->
-    <section id="work" style="padding: 0 40px;">
+      <section id="work">
         <h2>💼 Work & Research Experience</h2>
         <ul>
-            <li>
-                <strong>Graduate Research Assistant, UT Arlington</strong>
-                <p>Working on Privacy-Preserving Machine Learning and Federated Learning. Research includes Dimensionality Reduction using Optimal Transport methods.</p>
-            </li>
-            <li>
-                <strong>Machine Learning Intern, [Company Name]</strong>
-                <p>Developed scalable models for time-series analysis and anomaly detection.</p>
-            </li>
+          <li>
+            <strong>Graduate Research Assistant, UT Arlington</strong>
+            <p>
+              Working on Privacy-Preserving Machine Learning and Federated Learning. Research includes Dimensionality
+              Reduction using Optimal Transport methods.
+            </p>
+          </li>
+          <li>
+            <strong>Machine Learning Intern, [Company Name]</strong>
+            <p>Developed scalable models for time-series analysis and anomaly detection.</p>
+          </li>
         </ul>
-    </section>
+      </section>
 
-    <!-- Teaching Experience -->
-    <section id="teaching" style="padding: 0 40px;">
+      <section id="teaching">
         <h2>👨‍🏫 Teaching Experience</h2>
         <ul>
-            <li>
-                <strong>Graduate Teaching Assistant, UT Arlington</strong>
-                <p>Courses: <em>Introduction to Data Science, Machine Learning, Programming Languages</em></p>
-                <p>Responsibilities: Led lab sessions, graded assignments, and mentored students.</p>
-            </li>
-            <li>
-                <strong>Instructor, Programming and Algorithms Bootcamp</strong>
-                <p>Designed and delivered lessons on Python, data structures, and algorithm design.</p>
-            </li>
+          <li>
+            <strong>Graduate Teaching Assistant, UT Arlington</strong>
+            <p>Courses: <em>Introduction to Data Science, Machine Learning, Programming Languages</em></p>
+            <p>Responsibilities: Led lab sessions, graded assignments, and mentored students.</p>
+          </li>
+          <li>
+            <strong>Instructor, Programming and Algorithms Bootcamp</strong>
+            <p>Designed and delivered lessons on Python, data structures, and algorithm design.</p>
+          </li>
         </ul>
-    </section>
+      </section>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer style="text-align: center; padding: 20px; background-color: #f0f0f0;">
-        <p>Thanks for visiting!</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>Thanks for visiting!</p>
+  </footer>
 </body>
 
 </html>
