@@ -15,7 +15,7 @@ Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science 
 ## 📄 Recent Work
 
 - **Privacy-Aware Federated Learning with Compression**
-- **Energy-Efficient AI Models for Edge Devices**
+- **Energy-Efficient AI Models for Edge Devices** 
 - **Differential Privacy for Healthcare Data**
 
 (See my [publications](https://scholar.google.com) for more.)
