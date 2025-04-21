@@ -27,7 +27,7 @@ Welcome to my personal website! I'm a PhD candidate in Computer Science at the U
 ## 📫 Contact
 
 - 📧 Email: [sohel.rana@mavs.uta.edu](mailto:sohel.rana@mavs.uta.edu)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/your-link/)  
+- 💼 [LinkedIn]([https://www.linkedin.com/in/your-link/](https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/))  
 - 🧠 [Google Scholar](https://scholar.google.com/citations?user=yourID)  
 - 📁 [Resume/CV](./cv.pdf)  
 
