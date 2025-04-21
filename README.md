@@ -1,16 +1,14 @@
-# Muhammad Sohel Rana
 
-Welcome to my personal website! I'm a PhD candidate in Computer Science at the University of Texas at Arlington, with a research focus on **privacy-preserving machine learning**, **federated learning**, and **sustainable AI**.
+Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science at the University of Texas at Arlington, with a research focus on **Optimal Transport based dimensionality reduction** and **federated learning**.
 
 ---
 
 ## 🔬 Research Interests
 
-- Federated & Distributed Learning  
-- Privacy & Security in Machine Learning  
-- Trustworthy & Explainable AI  
-- Optimization in Machine Learning  
-- Sustainable and Efficient AI  
+- Optimal transport for manifold learning and embedding
+- Structure-preserving dimensionality reduction  
+- Scalable OT algorithms for high-dimensional data  
+  
 
 ---
 
