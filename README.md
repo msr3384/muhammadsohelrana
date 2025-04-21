@@ -30,7 +30,31 @@ Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science 
 - 🧠 [Google Scholar](https://scholar.google.com/citations?user=yourID)  
 - 📁 [Resume/CV](./cv.pdf)  
 
+## 👨‍🏫 Teaching Experience
+
+- **Graduate Teaching Assistant**, UT Arlington  
+  - Courses: *Introduction to Data Science, Machine Learning, Programming Languages*
+  - Responsibilities: Led lab sessions, graded assignments, and mentored students.
+
+- **Instructor**, Programming and Algorithms Bootcamp  
+  - Designed and delivered lessons on Python, data structures, and algorithm design.
+
 ---
+
+## 💼 Work & Research Experience
+
+- **Graduate Research Assistant**, UT Arlington  
+  - Working on Privacy-Preserving Machine Learning and Federated Learning.
+  - Research includes Dimensionality Reduction using Optimal Transport methods.
+
+- **Machine Learning Intern**, [Company Name] *(Optional)*  
+  - Developed scalable models for time-series analysis and anomaly detection.
+
+---
+
+✏️ More details on my [LinkedIn](https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/)  
+📂 See my projects and publications below!
+
 
 Thanks for visiting!
 
