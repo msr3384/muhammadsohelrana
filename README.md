@@ -28,7 +28,7 @@ Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/)
 - 🌐 [GitHub](https://github.com/msr3384)
 - 🧠 [Google Scholar](https://scholar.google.com/citations?user=yourID)  
-- 📁 [Resume/CV](./cv.pdf)  
+- 📁 [Resume/CV](./CV.pdf)  
 
 ## 👨‍🏫 Teaching Experience
 
