@@ -12,11 +12,7 @@ Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science 
 
 ---
 
-## 📄 Recent Work
 
-- **Privacy-Aware Federated Learning with Compression**
-- **Energy-Efficient AI Models for Edge Devices** 
-- **Differential Privacy for Healthcare Data**
 
 (See my [publications](https://scholar.google.com) for more.)
 
@@ -47,8 +43,7 @@ Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science 
   - Working on Privacy-Preserving Machine Learning and Federated Learning.
   - Research includes Dimensionality Reduction using Optimal Transport methods.
 
-- **Machine Learning Intern**, [Company Name] *(Optional)*  
-  - Developed scalable models for time-series analysis and anomaly detection.
+
 
 ---
 
