@@ -1,7 +1,4 @@
 
-Welcome to my personal website! I'm a PhD candidate in Mathematics-Data Science at the University of Texas at Arlington, with a research focus on **Optimal Transport based dimensionality reduction** and **federated learning**.
-
----
 
 ## 🔬 Research Interests
 
