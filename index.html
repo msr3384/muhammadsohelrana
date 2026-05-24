@@ -13,11 +13,11 @@ body{
     margin:0;
     padding:0;
     color:#222;
-    background:#ffffff;
-    line-height:1.9;
+    background:#fff;
+    line-height:1.6;
 }
 
-/* Navigation */
+/* ---------- Navigation ---------- */
 
 nav{
     background:#f8f8f8;
@@ -46,59 +46,59 @@ nav a:hover{
 }
 
 
-/* Main Layout */
+/* ---------- Main layout ---------- */
 
 .main-container{
     max-width:1150px;
     margin:auto;
     display:flex;
-    gap:60px;
+    gap:55px;
     padding:40px;
     align-items:flex-start;
 }
 
 
-/* Left */
+/* ---------- Left column ---------- */
 
 .left-column{
-    flex:0 0 250px;
+    flex:0 0 240px;
     text-align:center;
     position:sticky;
     top:25px;
 }
 
 .left-column img{
-    border-radius:50%/40%;
     width:160px;
     height:210px;
     object-fit:cover;
-    border:2px solid #333;
-    margin-bottom:20px;
+    border-radius:50%/40%;
+    border:2px solid #444;
+    margin-bottom:18px;
 }
 
 
-/* Contact Card */
+/* ---------- Contact Card ---------- */
 
 .contact-card{
-    text-align:left;
     background:#fafafa;
     border:1px solid #e5e5e5;
     border-radius:10px;
     padding:18px;
+    text-align:left;
 }
 
 .contact-card h3{
     margin-top:0;
     margin-bottom:15px;
+    text-align:center;
 }
 
 .contact-card p{
-    margin:14px 0;
-    line-height:1.8;
+    margin:10px 0;
 }
 
 
-/* Right Side */
+/* ---------- Right ---------- */
 
 .right-column{
     flex:1;
@@ -106,50 +106,61 @@ nav a:hover{
 
 h1{
     margin-top:0;
-    font-size:34px;
     margin-bottom:30px;
+    font-size:34px;
 }
 
 h2{
     border-bottom:2px solid #e5e5e5;
     padding-bottom:8px;
-    margin-bottom:22px;
+    margin-bottom:15px;
 }
-
-h3{
-    margin-top:30px;
-    margin-bottom:12px;
-}
-
-section{
-    margin-bottom:45px;
-}
-
-
-/* Profile Blocks */
 
 .profile-section{
-    margin-bottom:40px;
-    padding-bottom:25px;
-    border-bottom:1px solid #ececec;
+    margin-bottom:30px;
 }
+
+
+/* ---------- Lists ---------- */
 
 .profile-list{
-    padding-left:30px;
-    margin-top:15px;
+    padding-left:0;
+    list-style:none;
 }
+
+
+/* Each item becomes a small card */
 
 .profile-list li{
-    margin-bottom:18px;
-    line-height:2;
+
+    background:#fafafa;
+    border-left:4px solid #d5d5d5;
+
+    padding:12px 15px;
+
+    margin-bottom:12px;
+
+    border-radius:6px;
+
+    line-height:1.45;
+
+    transition:.2s;
 }
+
+.profile-list li:hover{
+    background:#f4f4f4;
+}
+
 
 .profile-list span{
-    color:#555;
+    display:block;
+    color:#666;
+    font-size:14px;
+    margin-top:3px;
 }
 
 
-/* Links */
+/* ---------- Links ---------- */
 
 a{
     color:#1a4f8b;
@@ -161,18 +172,18 @@ a:hover{
 }
 
 
-/* Footer */
+/* ---------- Footer ---------- */
 
 footer{
-    margin-top:30px;
     text-align:center;
-    background:#f0f0f0;
     padding:20px;
+    background:#f0f0f0;
     border-top:1px solid #ddd;
+    margin-top:30px;
 }
 
 
-/* Mobile */
+/* ---------- Mobile ---------- */
 
 @media(max-width:850px){
 
@@ -182,8 +193,8 @@ footer{
 }
 
 .left-column{
-    position:static;
     width:100%;
+    position:static;
 }
 
 .contact-card{
@@ -194,10 +205,10 @@ footer{
 }
 
 </style>
-
 </head>
 
 <body>
+
 
 <!-- Navigation -->
 
@@ -207,18 +218,17 @@ footer{
 <li><a href="Publications.html">Publications</a></li>
 <li><a href="Teaching.html">Teaching</a></li>
 <li><a href="Industrial Experience.html">Industrial Experience</a></li>
-<li><a href="CV (Updated).pdf" target="_blank">CV</a></li>
-<li><a href="Resume.pdf" target="_blank">Resume</a></li>
+<li><a href="CV (Updated).pdf">CV</a></li>
+<li><a href="Resume.pdf">Resume</a></li>
 </ul>
 </nav>
 
 
-<!-- Main Layout -->
 
 <div class="main-container">
 
 
-<!-- LEFT COLUMN -->
+<!-- LEFT -->
 
 <div class="left-column">
 
@@ -247,7 +257,7 @@ GitHub
 </p>
 
 <p>🧠
-<a href="https://scholar.google.com/citations?user=yourID">
+<a href="https://scholar.google.com">
 Google Scholar
 </a>
 </p>
@@ -264,7 +274,7 @@ Resume/CV
 
 
 
-<!-- RIGHT COLUMN -->
+<!-- RIGHT -->
 
 <div class="right-column">
 
@@ -281,46 +291,39 @@ Resume/CV
 <ul class="profile-list">
 
 <li>
-<strong>Graduate Research Assistant</strong>,
-University of Texas at Arlington, USA
-<span>(June 2023 – May 2026)</span>
+<strong>Graduate Research Assistant</strong><br>
+University of Texas at Arlington
+<span>June 2023 – May 2026</span>
 </li>
 
 <li>
-<strong>Graduate Teaching Assistant</strong>,
-University of Texas at Arlington, USA
-<span>(September 2022 – May 2023;
-September 2019 – May 2021)</span>
+<strong>Graduate Teaching Assistant</strong><br>
+University of Texas at Arlington
+<span>Sep 2022 – May 2023; Sep 2019 – May 2021</span>
 </li>
 
 <li>
-<strong>Lecturer</strong>,
-North South University, Bangladesh
-<span>(January 2022 – August 2022)</span>
+<strong>Lecturer</strong><br>
+North South University
+<span>Jan 2022 – Aug 2022</span>
 </li>
 
 <li>
-<strong>Graduate Teaching Assistant</strong>,
-Western Kentucky University, USA
-<span>(September 2015 – December 2017)</span>
+<strong>Graduate Teaching Assistant</strong><br>
+Western Kentucky University
+<span>Sep 2015 – Dec 2017</span>
 </li>
 
 <li>
-<strong>Senior Officer</strong>,
-Pubali Bank, Bangladesh
-<span>(June 2012 – August 2015)</span>
+<strong>Senior Officer</strong><br>
+Pubali Bank
+<span>Jun 2012 – Aug 2015</span>
 </li>
 
 <li>
-<strong>Math Teacher</strong>,
+<strong>Math Teacher</strong><br>
 Bangladesh International School and College
-<span>(March 2012 – May 2012)</span>
-</li>
-
-<li>
-<strong>Math Teacher</strong>,
-Bangladesh International Tutorial
-<span>(2010 – 2011)</span>
+<span>Mar 2012 – May 2012</span>
 </li>
 
 </ul>
@@ -336,35 +339,33 @@ Bangladesh International Tutorial
 <ul class="profile-list">
 
 <li>
-<strong>Ph.D. in Mathematics (Data Science Track)</strong>,
-University of Texas at Arlington, 2026.
-Supervisor:
+<strong>Ph.D. Mathematics (Data Science Track)</strong><br>
+University of Texas at Arlington
+<span>Supervisor:
 <a href="https://www.uta.edu/academics/faculty/profile?user=keaton.hamm">
 Dr. Keaton Hamm
 </a>
+</span>
 </li>
 
 <li>
-<strong>M.S. in Mathematics</strong>,
-Western Kentucky University, 2017.
-Supervisor:
+<strong>M.S. Mathematics</strong><br>
+Western Kentucky University
+<span>Supervisor:
 <a href="https://people.wku.edu/mark.robinson/page1.html">
 Dr. Mark Robinson
 </a>
+</span>
 </li>
 
 <li>
-<strong>M.S. in Applied Mathematics</strong>,
-University of Dhaka, 2008
+<strong>M.S. Applied Mathematics</strong><br>
+University of Dhaka
 </li>
 
 <li>
-<strong>B.S. in Mathematics</strong>,
-University of Dhaka, 2007.
-Supervisor:
-<a href="https://www.du.ac.bd/faculty/faculty_details/APMAT/72">
-Dr. Mohammad Ferdows
-</a>
+<strong>B.S. Mathematics</strong><br>
+University of Dhaka
 </li>
 
 </ul>
@@ -381,24 +382,18 @@ Dr. Mohammad Ferdows
 
 <li>Machine learning and data science</li>
 
-<li>
-Optimal transport (OT) and unbalanced optimal transport (UOT)
-</li>
+<li>Optimal transport (OT) and unbalanced optimal transport (UOT)</li>
 
-<li>
-Dimensionality reduction and neighborhood embeddings
-</li>
+<li>Dimensionality reduction and neighborhood embeddings</li>
 
-<li>
-Scalable algorithms for high-dimensional data analysis
-</li>
+<li>Scalable algorithms for high-dimensional data analysis</li>
 
 </ul>
 
 </section>
 
-
 </div>
+
 </div>
 
 
