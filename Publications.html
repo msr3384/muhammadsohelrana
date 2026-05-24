@@ -1,148 +1,280 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Sohel Rana - Personal Website</title>
+  <title>Muhammad Sohel Rana - Publications</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #222;
+      background-color: #ffffff;
+      line-height: 1.6;
     }
 
     nav {
       background-color: #f8f8f8;
-      padding: 15px 0;
+      padding: 14px 0;
+      border-bottom: 1px solid #e5e5e5;
     }
 
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 26px;
       margin: 0;
-      padding: 0;
+      padding: 0 16px;
+    }
+
+    nav a {
+      color: #1a4f8b;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .main-container {
       display: flex;
-      padding: 40px;
-      gap: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 42px 32px;
+      gap: 55px;
+      align-items: flex-start;
     }
 
     .left-column {
-      flex: 0 0 250px;
+      flex: 0 0 230px;
       text-align: center;
+      position: sticky;
+      top: 25px;
     }
 
     .left-column img {
       border-radius: 50% / 40%;
       border: 2px solid #333;
-      width: 150px;
-      height: 200px;
+      width: 155px;
+      height: 205px;
       object-fit: cover;
+      margin-bottom: 18px;
+    }
+
+    .contact-card {
+      text-align: left;
+      background-color: #fafafa;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    .contact-card h3 {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      color: #111;
+    }
+
+    .contact-card p {
+      margin: 9px 0;
+      font-size: 15px;
+      line-height: 1.45;
     }
 
     .right-column {
       flex: 1;
+      max-width: 780px;
+    }
+
+    header h1 {
+      margin-top: 0;
+      margin-bottom: 22px;
+      font-size: 32px;
+      line-height: 1.2;
+      color: #111;
     }
 
     section {
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f0f0f0;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 25px;
+      border-bottom: 2px solid #e5e5e5;
+      padding-bottom: 8px;
+      color: #111;
+    }
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 10px;
+      font-size: 19px;
+      color: #333;
+    }
+
+    .publication-list {
+      margin-top: 0;
+      margin-bottom: 8px;
+      padding-left: 24px;
+    }
+
+    .publication-list li {
+      margin-bottom: 15px;
+      padding-left: 4px;
+      line-height: 1.65;
+    }
+
+    .publication-list i {
+      color: #111;
     }
 
     a {
+      color: #1a4f8b;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background-color: #f0f0f0;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 800px) {
+      .main-container {
+        flex-direction: column;
+        padding: 28px 22px;
+        gap: 30px;
+      }
+
+      .left-column {
+        position: static;
+        width: 100%;
+        flex: none;
+      }
+
+      .contact-card {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+
+      .right-column {
+        max-width: 100%;
+      }
+
+      header h1 {
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <!-- Navigation Bar -->
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Publications.html">Publications</a></li>
-    <li><a href="Teaching.html">Teaching</a></li>
-    <li><a href="Industrial Experience.html">Industrial Experience</a></li>
-    <li><a href="CV (Updated).pdf" target="_blank">CV</a></li>
-    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Publications.html">Publications</a></li>
+      <li><a href="Teaching.html">Teaching</a></li>
+      <li><a href="Industrial Experience.html">Industrial Experience</a></li>
+      <li><a href="CV (Updated).pdf" target="_blank">CV</a></li>
+      <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
 
   <!-- Main Layout -->
   <div class="main-container">
+
     <!-- Left Column: Photo + Contact -->
     <div class="left-column">
       <img src="Photo.jpg" alt="Muhammad Sohel Rana" />
-      <section id="contact" style="text-align: left; margin-top: 20px;">
-        <p> <a Muhammad Sohel Rana</a></p>
-        <p>📧 <a href="mailto:sohel.rana@mavs.uta.edu">Email</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">LinkedIn</a></p>
-        <p>🌐 <a href="https://github.com/msr3384">GitHub</a></p>
-        <p>🧠 <a href="https://scholar.google.com/citations?user=yourID">Google Scholar</a></p>
-        <p>📁 <a href="./CV (Updated).pdf">Resume/CV</a></p>
+
+      <section id="contact" class="contact-card">
+        <h3>Muhammad Sohel Rana</h3>
+        <p>📧 <a href="mailto:muhammadsohel.rana@mavs.uta.edu">Email</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/" target="_blank">LinkedIn</a></p>
+        <p>🌐 <a href="https://github.com/msr3384" target="_blank">GitHub</a></p>
+        <p>🧠 <a href="https://scholar.google.com/citations?user=yourID" target="_blank">Google Scholar</a></p>
+        <p>📁 <a href="./CV (Updated).pdf" target="_blank">Resume/CV</a></p>
       </section>
     </div>
 
     <!-- Right Column: Content -->
     <div class="right-column">
 
+      <header>
+        <h1>Publications</h1>
+      </header>
 
+      <section id="Publications">
+        <h2>🔬 Publications</h2>
 
-<section id="Publications">
-  <h2>🔬 Publications</h2>
+        <h3>📄 Submitted</h3>
+        <ul class="publication-list">
+          <li>
+            Muhammad Rana and Keaton Hamm,
+            <i>Neighbor Embeddings Using Unbalanced Optimal Transport Metrics</i>.
+          </li>
 
-  <h3>📄 Submitted</h3>
-  <ul>
-    <li>Muhammad Rana, Keaton Hamm, <i>Neighbor Embeddings Using Unbalanced Optimal Transport Metrics</i></li>
-    <li>Muhammad Rana, Phuong Trinh, Ryan Bui, and Keaton Hamm, <i>On Wasserstein distance neighbor embeddings</i>. (Approximately 19 pages)</li>
-    <li>Md Abul Hossain Mamun, Muhammad Rana. <i>Factors Influencing women’s total children ever born and current contraceptive use in urban and rural areas: Evidence from BDHS 2017-18.</i></li>
-  </ul>
+          <li>
+            Muhammad Rana, Phuong Trinh, Ryan Bui, and Keaton Hamm,
+            <i>On Wasserstein Distance Neighbor Embeddings</i>.
+          </li>
 
- <h3>📘 Conference Papers</h3>
-<ul>
-  <li>
-Muhammad Rana, Abiy Tasissa, HanQin Cai, Yakov Gavriyelov, Keaton Hamm,
-<i>Recovering Wasserstein Distance Matrices from Few Measurements</i>,
-Proceedings of <a href="https://2026.ieeeicassp.org/" target="_blank">
-IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)
-</a>
-</li>
-  <li>
-    Zahidur Talukder, Muhammad Rana, Keaton Hamm, and Mohammad Islam, 
-    <i>Empowering Clients: Self-Adaptive Federated Learning for Data Quality Challenges</i>. 
-    (Approximately 11 pages, 
-    <a href="https://services.conferences.computer.org/2025/edge/" target="_blank">
-IEEE EDGE 2025 </a>)
-  </li>
-  <li>Md. Mehedi Hasan, Mohammad Abdul Halim, Muhammad Rana, Salma Yeasmin Jannaty, M. J.Uddin. 
-    <i>Nanofluid Natural Convection in Trapezoidal Annuli: Comparative Effects of Triangular, Circular, and Square Inner Walls</i>
-  </li>
-</ul>
+          <li>
+            Md Abul Hossain Mamun and Muhammad Rana,
+            <i>Factors Influencing Women’s Total Children Ever Born and Current Contraceptive Use in Urban and Rural Areas: Evidence from BDHS 2017--18</i>.
+          </li>
+        </ul>
 
+        <h3>📘 Conference Papers</h3>
+        <ul class="publication-list">
+          <li>
+            Muhammad Rana, Abiy Tasissa, HanQin Cai, Yakov Gavriyelov, and Keaton Hamm,
+            <i>Recovering Wasserstein Distance Matrices from Few Measurements</i>,
+            Proceedings of
+            <a href="https://2026.ieeeicassp.org/" target="_blank">
+              IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)
+            </a>.
+          </li>
 
-  <h3>📕 Manuscripts in preparations </h3>
-  <ul>
-    <li> *** </li>
-    
-  </ul>
-</section>
+          <li>
+            Zahidur Talukder, Muhammad Rana, Keaton Hamm, and Mohammad Islam,
+            <i>Empowering Clients: Self-Adaptive Federated Learning for Data Quality Challenges</i>,
+            <a href="https://services.conferences.computer.org/2025/edge/" target="_blank">
+              IEEE EDGE 2025
+            </a>.
+          </li>
 
+          <li>
+            Md. Mehedi Hasan, Mohammad Abdul Halim, Muhammad Rana, Salma Yeasmin Jannaty, and M. J. Uddin,
+            <i>Nanofluid Natural Convection in Trapezoidal Annuli: Comparative Effects of Triangular, Circular, and Square Inner Walls</i>.
+          </li>
+        </ul>
 
+        <h3>📕 Manuscripts in Preparation</h3>
+        <ul class="publication-list">
+          <li>Additional manuscripts will be listed here.</li>
+        </ul>
+      </section>
 
     </div>
   </div>
@@ -151,6 +283,7 @@ IEEE EDGE 2025 </a>)
   <footer>
     <p>Thanks for visiting!</p>
   </footer>
+
 </body>
 
 </html>
