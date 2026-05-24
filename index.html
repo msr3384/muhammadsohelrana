@@ -2,145 +2,409 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Sohel Rana - Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Sohel Rana - Personal Website</title>
 
-    nav {
-      background-color: #f8f8f8;
-      padding: 15px 0;
-    }
+<style>
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 0;
-      padding: 0;
-    }
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    color:#222;
+    background:#ffffff;
+    line-height:1.9;
+}
 
-    .main-container {
-      display: flex;
-      padding: 40px;
-      gap: 60px;
-    }
+/* Navigation */
 
-    .left-column {
-      flex: 0 0 250px;
-      text-align: center;
-    }
+nav{
+    background:#f8f8f8;
+    padding:15px 0;
+    border-bottom:1px solid #e5e5e5;
+}
 
-    .left-column img {
-      border-radius: 50% / 40%;
-      border: 2px solid #333;
-      width: 150px;
-      height: 200px;
-      object-fit: cover;
-    }
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:28px;
+    margin:0;
+    padding:0;
+}
 
-    .right-column {
-      flex: 1;
-    }
+nav a{
+    text-decoration:none;
+    color:#1a4f8b;
+    font-weight:600;
+}
 
-    section {
-      margin-bottom: 40px;
-    }
+nav a:hover{
+    text-decoration:underline;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f0f0f0;
-    }
 
-    a {
-      text-decoration: none;
-    }
+/* Main Layout */
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+.main-container{
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    gap:60px;
+    padding:40px;
+    align-items:flex-start;
+}
+
+
+/* Left */
+
+.left-column{
+    flex:0 0 250px;
+    text-align:center;
+    position:sticky;
+    top:25px;
+}
+
+.left-column img{
+    border-radius:50%/40%;
+    width:160px;
+    height:210px;
+    object-fit:cover;
+    border:2px solid #333;
+    margin-bottom:20px;
+}
+
+
+/* Contact Card */
+
+.contact-card{
+    text-align:left;
+    background:#fafafa;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    padding:18px;
+}
+
+.contact-card h3{
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    margin:14px 0;
+    line-height:1.8;
+}
+
+
+/* Right Side */
+
+.right-column{
+    flex:1;
+}
+
+h1{
+    margin-top:0;
+    font-size:34px;
+    margin-bottom:30px;
+}
+
+h2{
+    border-bottom:2px solid #e5e5e5;
+    padding-bottom:8px;
+    margin-bottom:22px;
+}
+
+h3{
+    margin-top:30px;
+    margin-bottom:12px;
+}
+
+section{
+    margin-bottom:45px;
+}
+
+
+/* Profile Blocks */
+
+.profile-section{
+    margin-bottom:40px;
+    padding-bottom:25px;
+    border-bottom:1px solid #ececec;
+}
+
+.profile-list{
+    padding-left:30px;
+    margin-top:15px;
+}
+
+.profile-list li{
+    margin-bottom:18px;
+    line-height:2;
+}
+
+.profile-list span{
+    color:#555;
+}
+
+
+/* Links */
+
+a{
+    color:#1a4f8b;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+/* Footer */
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    background:#f0f0f0;
+    padding:20px;
+    border-top:1px solid #ddd;
+}
+
+
+/* Mobile */
+
+@media(max-width:850px){
+
+.main-container{
+    flex-direction:column;
+    padding:25px;
+}
+
+.left-column{
+    position:static;
+    width:100%;
+}
+
+.contact-card{
+    max-width:350px;
+    margin:auto;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
-  <!-- Navigation Bar -->
+
+<!-- Navigation -->
+
 <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Publications.html">Publications</a></li>
-    <li><a href="Teaching.html">Teaching</a></li>
-    <li><a href="Industrial Experience.html">Industrial Experience</a></li>
-    <li><a href="CV (Updated).pdf" target="_blank">CV</a></li>
-    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
-  </ul>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Publications.html">Publications</a></li>
+<li><a href="Teaching.html">Teaching</a></li>
+<li><a href="Industrial Experience.html">Industrial Experience</a></li>
+<li><a href="CV (Updated).pdf" target="_blank">CV</a></li>
+<li><a href="Resume.pdf" target="_blank">Resume</a></li>
+</ul>
 </nav>
 
-  <!-- Main Layout -->
-  <div class="main-container">
-    <!-- Left Column: Photo + Contact -->
-    <div class="left-column">
-      <img src="Headshot.png" alt="Muhammad Sohel Rana" />
-      <section id="contact" style="text-align: left; margin-top: 20px;">
-        <p> <a Muhammad Sohel Rana</a></p>
-        <p>📧 <a href="mailto:sohel.rana@mavs.uta.edu">Email</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">LinkedIn</a></p>
-        <p>🌐 <a href="https://github.com/msr3384">GitHub</a></p>
-        <p>🧠 <a href="https://scholar.google.com/citations?user=yourID">Google Scholar</a></p>
-        <p>📁 <a href="./CV (Updated).pdf">Resume/CV</a></p>
-      </section>
-    </div>
 
-  <!-- Right Column: Content -->
-<div class="right-column">
-  <header>
-    <h1>Muhammad Sohel Rana</h1>
-  </header>
+<!-- Main Layout -->
 
-  <section class="profile-section">
-    <h2>💼 Work History</h2>
-    <ul class="profile-list">
-      <li><strong>Graduate Research Assistant</strong>, University of Texas at Arlington, USA <span>(June 2023 – May 2026)</span></li>
-      <li><strong>Graduate Teaching Assistant</strong>, University of Texas at Arlington, USA <span>(September 2022 – May 2023; September 2019 – May 2021)</span></li>
-      <li><strong>Lecturer</strong>, North South University, Bangladesh <span>(January 2022 – August 2022)</span></li>
-      <li><strong>Graduate Teaching Assistant</strong>, Western Kentucky University, USA <span>(September 2015 – December 2017)</span></li>
-      <li><strong>Senior Officer</strong>, Pubali Bank, Bangladesh <span>(June 2012 – August 2015)</span></li>
-      <li><strong>Math Teacher</strong>, Bangladesh International School and College, Bangladesh <span>(March 2012 – May 2012)</span></li>
-      <li><strong>Math Teacher</strong>, Bangladesh International Tutorial, Bangladesh <span>(2010 – 2011)</span></li>
-    </ul>
-  </section>
+<div class="main-container">
 
-  <section class="profile-section">
-    <h2>🎓 Education</h2>
-    <ul class="profile-list">
-      <li><strong>Ph.D. in Mathematics (Data Science Track)</strong>, University of Texas at Arlington, 2026. Supervisor: <a href="https://www.uta.edu/academics/faculty/profile?user=keaton.hamm">Dr. Keaton Hamm</a></li>
-      <li><strong>M.S. in Mathematics</strong>, Western Kentucky University, 2017. Supervisor: <a href="https://people.wku.edu/mark.robinson/page1.html">Dr. Mark Robinson</a></li>
-      <li><strong>M.S. in Applied Mathematics</strong>, University of Dhaka, 2008</li>
-      <li><strong>B.S. in Mathematics</strong>, University of Dhaka, 2007. Supervisor: <a href="https://www.du.ac.bd/faculty/faculty_details/APMAT/72">Dr. Mohammad Ferdows</a></li>
-    </ul>
-  </section>
 
-  <section class="profile-section" id="research">
-    <h2>🔬 Research Interests</h2>
-    <ul class="profile-list">
-      <li>Machine learning and data science</li>
-      <li>Optimal transport (OT) and unbalanced optimal transport (UOT)</li>
-      <li>Dimensionality reduction and neighborhood embeddings</li>
-      <li>Scalable algorithms for high-dimensional data analysis</li>
-    </ul>
-  </section>
+<!-- LEFT COLUMN -->
+
+<div class="left-column">
+
+<img src="Headshot.png" alt="Muhammad Sohel Rana">
+
+<section class="contact-card">
+
+<h3>Muhammad Sohel Rana</h3>
+
+<p>📧
+<a href="mailto:muhammadsohel.rana@mavs.uta.edu">
+Email
+</a>
+</p>
+
+<p>🔗
+<a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/">
+LinkedIn
+</a>
+</p>
+
+<p>🌐
+<a href="https://github.com/msr3384">
+GitHub
+</a>
+</p>
+
+<p>🧠
+<a href="https://scholar.google.com/citations?user=yourID">
+Google Scholar
+</a>
+</p>
+
+<p>📁
+<a href="./CV (Updated).pdf">
+Resume/CV
+</a>
+</p>
+
+</section>
+
 </div>
 
-<!-- Footer -->
-<footer>
-  <p>Thanks for visiting!</p>
-</footer>
-</body>
 
+
+<!-- RIGHT COLUMN -->
+
+<div class="right-column">
+
+<header>
+<h1>Muhammad Sohel Rana</h1>
+</header>
+
+
+
+<section class="profile-section">
+
+<h2>💼 Work History</h2>
+
+<ul class="profile-list">
+
+<li>
+<strong>Graduate Research Assistant</strong>,
+University of Texas at Arlington, USA
+<span>(June 2023 – May 2026)</span>
+</li>
+
+<li>
+<strong>Graduate Teaching Assistant</strong>,
+University of Texas at Arlington, USA
+<span>(September 2022 – May 2023;
+September 2019 – May 2021)</span>
+</li>
+
+<li>
+<strong>Lecturer</strong>,
+North South University, Bangladesh
+<span>(January 2022 – August 2022)</span>
+</li>
+
+<li>
+<strong>Graduate Teaching Assistant</strong>,
+Western Kentucky University, USA
+<span>(September 2015 – December 2017)</span>
+</li>
+
+<li>
+<strong>Senior Officer</strong>,
+Pubali Bank, Bangladesh
+<span>(June 2012 – August 2015)</span>
+</li>
+
+<li>
+<strong>Math Teacher</strong>,
+Bangladesh International School and College
+<span>(March 2012 – May 2012)</span>
+</li>
+
+<li>
+<strong>Math Teacher</strong>,
+Bangladesh International Tutorial
+<span>(2010 – 2011)</span>
+</li>
+
+</ul>
+
+</section>
+
+
+
+<section class="profile-section">
+
+<h2>🎓 Education</h2>
+
+<ul class="profile-list">
+
+<li>
+<strong>Ph.D. in Mathematics (Data Science Track)</strong>,
+University of Texas at Arlington, 2026.
+Supervisor:
+<a href="https://www.uta.edu/academics/faculty/profile?user=keaton.hamm">
+Dr. Keaton Hamm
+</a>
+</li>
+
+<li>
+<strong>M.S. in Mathematics</strong>,
+Western Kentucky University, 2017.
+Supervisor:
+<a href="https://people.wku.edu/mark.robinson/page1.html">
+Dr. Mark Robinson
+</a>
+</li>
+
+<li>
+<strong>M.S. in Applied Mathematics</strong>,
+University of Dhaka, 2008
+</li>
+
+<li>
+<strong>B.S. in Mathematics</strong>,
+University of Dhaka, 2007.
+Supervisor:
+<a href="https://www.du.ac.bd/faculty/faculty_details/APMAT/72">
+Dr. Mohammad Ferdows
+</a>
+</li>
+
+</ul>
+
+</section>
+
+
+
+<section class="profile-section">
+
+<h2>🔬 Research Interests</h2>
+
+<ul class="profile-list">
+
+<li>Machine learning and data science</li>
+
+<li>
+Optimal transport (OT) and unbalanced optimal transport (UOT)
+</li>
+
+<li>
+Dimensionality reduction and neighborhood embeddings
+</li>
+
+<li>
+Scalable algorithms for high-dimensional data analysis
+</li>
+
+</ul>
+
+</section>
+
+
+</div>
+</div>
+
+
+<footer>
+<p>Thanks for visiting!</p>
+</footer>
+
+</body>
 </html>
