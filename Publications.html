@@ -1,300 +1,1693 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Sohel Rana - Publications</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-      background-color: #ffffff;
-      line-height: 1.6;
-    }
+<meta
+    name="description"
+    content="Publications of Muhammad Sohel Rana in optimal transport, machine learning, dimensionality reduction, matrix recovery, and federated learning."
+>
 
-    nav {
-      background-color: #f8f8f8;
-      padding: 14px 0;
-      border-bottom: 1px solid #e5e5e5;
-    }
+<meta name="author" content="Muhammad Sohel Rana">
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 26px;
-      margin: 0;
-      padding: 0 16px;
-    }
+<title>Publications | Muhammad Sohel Rana</title>
 
-    nav a {
-      color: #1a4f8b;
-      font-weight: 600;
-      text-decoration: none;
-    }
+<style>
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+:root {
+    --navy: #092f55;
+    --blue: #136a9f;
+    --blue2: #2d8abb;
+    --pale: #eaf6fc;
 
-    .main-container {
-      display: flex;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 42px 32px;
-      gap: 55px;
-      align-items: flex-start;
-    }
+    --white: #ffffff;
+    --bg: #f4f8fb;
 
-    .left-column {
-      flex: 0 0 230px;
-      text-align: center;
-      position: sticky;
-      top: 25px;
-    }
+    --text: #223247;
+    --muted: #607187;
+    --border: #dae7ef;
 
-    .left-column img {
-      border-radius: 50% / 40%;
-      border: 2px solid #333;
-      width: 155px;
-      height: 205px;
-      object-fit: cover;
-      margin-bottom: 18px;
-    }
+    --shadow:
+        0 16px 40px rgba(12, 55, 87, 0.12);
 
-    .contact-card {
-      text-align: left;
-      background-color: #fafafa;
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
-      padding: 16px 18px;
-    }
+    --hover:
+        0 24px 55px rgba(12, 55, 87, 0.18);
 
-    .contact-card h3 {
-      margin: 0 0 12px 0;
-      font-size: 18px;
-      color: #111;
-    }
+    --max: 1190px;
+}
 
-    .contact-card p {
-      margin: 9px 0;
-      font-size: 15px;
-      line-height: 1.45;
-    }
 
-    .right-column {
-      flex: 1;
-      max-width: 780px;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    header h1 {
-      margin-top: 0;
-      margin-bottom: 22px;
-      font-size: 32px;
-      line-height: 1.2;
-      color: #111;
-    }
 
-    section {
-      margin-bottom: 36px;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    h2 {
-      margin-top: 0;
-      margin-bottom: 18px;
-      font-size: 25px;
-      border-bottom: 2px solid #e5e5e5;
-      padding-bottom: 8px;
-      color: #111;
-    }
 
-    h3 {
-      margin-top: 24px;
-      margin-bottom: 10px;
-      font-size: 19px;
-      color: #333;
-    }
+body {
+    margin: 0;
 
-    .publication-list {
-      margin-top: 0;
-      margin-bottom: 8px;
-      padding-left: 24px;
-    }
+    color: var(--text);
+    background: var(--bg);
 
-    .publication-list li {
-      margin-bottom: 15px;
-      padding-left: 4px;
-      line-height: 1.65;
-    }
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
 
-    .publication-list i {
-      color: #111;
-    }
+    line-height: 1.7;
+}
 
-    a {
-      color: #1a4f8b;
-      text-decoration: none;
-    }
 
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
 
-    footer {
-      text-align: center;
-      padding: 22px;
-      background-color: #f0f0f0;
-      border-top: 1px solid #ddd;
-      margin-top: 20px;
-    }
 
-    footer p {
-      margin: 0;
-    }
+a:hover {
+    color: var(--navy);
+}
 
-    @media (max-width: 800px) {
-      .main-container {
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(15px);
+}
+
+
+.navigation {
+    width: min(
+        var(--max),
+        calc(100% - 40px)
+    );
+
+    min-height: 74px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    color: var(--navy);
+
+    font-weight: 900;
+
+    white-space: nowrap;
+}
+
+
+.brand-mark {
+    width: 37px;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--blue),
+            var(--navy)
+        );
+
+    border-radius: 11px;
+
+    font-size: 0.82rem;
+
+    box-shadow:
+        0 8px 22px rgba(12, 55, 87, 0.08);
+}
+
+
+.navigation-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    gap: 4px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation-links a {
+    display: block;
+
+    padding: 9px 11px;
+
+    color: #294961;
+
+    border-radius: 9px;
+
+    font-size: 0.89rem;
+    font-weight: 750;
+}
+
+
+.navigation-links a:hover,
+.navigation-links a.active {
+    color: var(--blue);
+    background: var(--pale);
+}
+
+
+.navigation-links .nav-button {
+    color: var(--white);
+    background: var(--blue);
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.navigation-links .nav-button:hover {
+    color: var(--white);
+    background: var(--navy);
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(75, 165, 210, 0.25),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #fbfdff 0%,
+            #e9f5fc 100%
+        );
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.hero-inner {
+    width: min(
+        var(--max),
+        calc(100% - 40px)
+    );
+
+    margin: auto;
+    padding: 72px 0 68px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        330px;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+.eyebrow {
+    display: inline-block;
+
+    margin-bottom: 13px;
+    padding: 6px 12px;
+
+    color: var(--blue);
+    background: #eff9fd;
+
+    border: 1px solid #c7e0ed;
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+
+.hero h1 {
+    margin-bottom: 13px;
+
+    color: var(--navy);
+
+    font-size: clamp(
+        2.7rem,
+        5vw,
+        4.25rem
+    );
+
+    line-height: 1.03;
+    letter-spacing: -2.5px;
+}
+
+
+.hero p {
+    max-width: 760px;
+    margin-bottom: 0;
+
+    color: #40556b;
+
+    font-size: 1.03rem;
+}
+
+
+/* =========================================================
+   PAPER ILLUSTRATION
+========================================================= */
+
+.visual {
+    height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    border: 1px solid #d3e6f1;
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+}
+
+
+.paper {
+    position: relative;
+
+    width: 130px;
+    height: 165px;
+
+    background: var(--white);
+
+    border: 1px solid #cfe1ec;
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 22px rgba(12, 55, 87, 0.12);
+}
+
+
+.paper::before {
+    content: "";
+
+    position: absolute;
+
+    top: 34px;
+    right: 18px;
+    left: 18px;
+
+    height: 6px;
+
+    background: #d7e9f3;
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 18px 0 #d7e9f3,
+        0 36px 0 #d7e9f3,
+        0 54px 0 #d7e9f3;
+}
+
+
+.paper::after {
+    content: "";
+
+    position: absolute;
+
+    top: 112px;
+    right: 48px;
+    left: 18px;
+
+    height: 6px;
+
+    background: var(--blue2);
+
+    border-radius: 999px;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.layout {
+    width: min(
+        var(--max),
+        calc(100% - 40px)
+    );
+
+    margin: auto;
+    padding: 52px 0 82px;
+
+    display: grid;
+
+    grid-template-columns:
+        275px
+        minmax(0, 1fr);
+
+    gap: 36px;
+
+    align-items: start;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 98px;
+}
+
+
+.card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 26px;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.side-card {
+    padding: 24px;
+}
+
+
+.side-card + .side-card {
+    margin-top: 19px;
+}
+
+
+.side-card h2 {
+    margin-bottom: 15px;
+
+    color: var(--navy);
+
+    font-size: 1.1rem;
+}
+
+
+.side-nav {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.side-nav li + li {
+    margin-top: 5px;
+}
+
+
+.side-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 10px 11px;
+
+    color: #355168;
+    background: #fbfdff;
+
+    border-radius: 10px;
+
+    font-size: 0.88rem;
+    font-weight: 760;
+}
+
+
+.side-nav a:hover {
+    color: var(--blue);
+    background: var(--pale);
+}
+
+
+.count {
+    min-width: 27px;
+    height: 27px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--blue);
+    background: var(--pale);
+
+    border-radius: 999px;
+
+    font-size: 0.73rem;
+    font-weight: 900;
+}
+
+
+.side-card p {
+    color: var(--muted);
+
+    font-size: 0.88rem;
+}
+
+
+.mini {
+    display: inline-flex;
+
+    margin: 3px;
+    padding: 8px 11px;
+
+    color: var(--blue);
+    background: var(--pale);
+
+    border: 1px solid #d0e6f1;
+    border-radius: 9px;
+
+    font-size: 0.8rem;
+    font-weight: 850;
+}
+
+
+.mini:hover {
+    color: var(--white);
+    background: var(--blue);
+}
+
+
+/* =========================================================
+   PUBLICATION SECTIONS
+========================================================= */
+
+.section {
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+
+.section h2 {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 22px;
+    padding-bottom: 13px;
+
+    color: var(--navy);
+
+    border-bottom: 2px solid var(--pale);
+
+    font-size: 1.45rem;
+}
+
+
+.section h2::after {
+    content: "";
+
+    width: 55px;
+    height: 3px;
+
+    margin-left: auto;
+
+    background: var(--blue2);
+
+    border-radius: 999px;
+}
+
+
+.intro {
+    margin: -8px 0 22px;
+
+    color: var(--muted);
+
+    font-size: 0.93rem;
+}
+
+
+/* =========================================================
+   PUBLICATION CARDS
+========================================================= */
+
+.pub {
+    position: relative;
+
+    margin-bottom: 16px;
+    padding: 22px 22px 21px 25px;
+
+    background: #fcfeff;
+
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--blue2);
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.pub:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--hover);
+}
+
+
+.topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.status {
+    display: inline-flex;
+
+    padding: 4px 9px;
+
+    border-radius: 999px;
+
+    font-size: 0.7rem;
+    font-weight: 900;
+
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+}
+
+
+.published {
+    color: #267a57;
+    background: #eaf7f0;
+}
+
+
+.proceedings {
+    color: var(--blue);
+    background: var(--pale);
+}
+
+
+.review {
+    color: #9a6817;
+    background: #fff7e7;
+}
+
+
+.submitted {
+    color: #7654a8;
+    background: #f3edfb;
+}
+
+
+.year {
+    color: var(--muted);
+
+    font-size: 0.78rem;
+    font-weight: 850;
+}
+
+
+.pub h3 {
+    margin-bottom: 8px;
+
+    color: var(--navy);
+
+    font-size: 1.08rem;
+    line-height: 1.45;
+}
+
+
+.authors {
+    margin-bottom: 6px;
+
+    color: #465b70;
+
+    font-size: 0.91rem;
+}
+
+
+.venue {
+    margin-bottom: 0;
+
+    color: var(--blue);
+
+    font-size: 0.88rem;
+    font-weight: 850;
+}
+
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+
+.plink {
+    display: inline-flex;
+
+    padding: 7px 10px;
+
+    color: var(--blue);
+    background: var(--pale);
+
+    border: 1px solid #d1e6f1;
+    border-radius: 8px;
+
+    font-size: 0.77rem;
+    font-weight: 850;
+}
+
+
+.plink:hover {
+    color: var(--white);
+    background: var(--blue);
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.note {
+    padding: 18px 20px;
+
+    color: #496176;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f9fdff,
+            #edf8fd
+        );
+
+    border: 1px solid #d4e8f2;
+    border-radius: 13px;
+
+    font-size: 0.89rem;
+}
+
+
+.note strong {
+    color: var(--navy);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    color: #dceaf3;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--navy),
+            #082844
+        );
+}
+
+
+.footer-inner {
+    width: min(
+        var(--max),
+        calc(100% - 40px)
+    );
+
+    margin: auto;
+    padding: 40px 0 27px;
+}
+
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.footer-name {
+    margin-bottom: 4px;
+
+    color: var(--white);
+
+    font-size: 1.12rem;
+    font-weight: 850;
+}
+
+
+.footer-desc {
+    margin-bottom: 0;
+
+    color: #b9d0df;
+
+    font-size: 0.88rem;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.footer-links a {
+    color: var(--white);
+
+    font-size: 0.85rem;
+    font-weight: 750;
+}
+
+
+.footer-links a:hover {
+    color: #7fc2df;
+}
+
+
+.footer-bottom {
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    margin: 3px 0;
+
+    color: #aec8d9;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navigation {
+        padding: 13px 0;
+
         flex-direction: column;
-        padding: 28px 22px;
-        gap: 30px;
-      }
 
-      .left-column {
-        position: static;
-        width: 100%;
-        flex: none;
-      }
-
-      .contact-card {
-        max-width: 360px;
-        margin: 0 auto;
-      }
-
-      .right-column {
-        max-width: 100%;
-      }
-
-      header h1 {
-        text-align: center;
-      }
+        gap: 8px;
     }
-  </style>
+
+
+    .navigation-links {
+        justify-content: center;
+    }
+
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .visual {
+        display: none;
+    }
+
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sidebar {
+        position: static;
+    }
+
+
+    .footer-top {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navigation,
+    .hero-inner,
+    .layout,
+    .footer-inner {
+        width: min(
+            100% - 28px,
+            var(--max)
+        );
+    }
+
+
+    .navigation-links a {
+        padding: 7px;
+
+        font-size: 0.78rem;
+    }
+
+
+    .hero h1 {
+        font-size: 2.35rem;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .section,
+    .side-card {
+        padding: 21px 18px;
+    }
+
+
+    .section h2 {
+        font-size: 1.22rem;
+    }
+
+
+    .section h2::after {
+        display: none;
+    }
+
+
+    .topline {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+</style>
 </head>
+
 
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Publications.html">Publications</a></li>
-      <li><a href="Teaching.html">Teaching</a></li>
-      <li><a href="Industrial Experience.html">Industrial Experience</a></li>
-      <li><a href="CV (Updated).pdf" target="_blank">CV</a></li>
-      <li><a href="Resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
 
-  <!-- Main Layout -->
-  <div class="main-container">
+<!-- =======================================================
+     NAVIGATION
+======================================================== -->
 
-    <!-- Left Column: Photo + Contact -->
-    <div class="left-column">
-      <img src="Headshot.png" alt="Muhammad Sohel Rana" />
+<header class="site-header">
 
-      <section id="contact" class="contact-card">
-        <h3>Muhammad Sohel Rana</h3>
-        <p>📧 <a href="mailto:muhammadsohel.rana@mavs.uta.edu">Email</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/muhammad-sohel-rana-302a321b7/" target="_blank">LinkedIn</a></p>
-        <p>🌐 <a href="https://github.com/msr3384" target="_blank">GitHub</a></p>
-        <p>🧠 <a href="https://scholar.google.com/citations?user=yourID" target="_blank">Google Scholar</a></p>
-        <p>📁 
-<a href="./CV (Updated).pdf" target="_blank" rel="noopener noreferrer">
-CV
-</a> /
-<a href="./Resume.pdf" target="_blank" rel="noopener noreferrer">
-Resume
+<nav
+    class="navigation"
+    aria-label="Main navigation"
+>
+
+<a
+    class="brand"
+    href="index.html"
+>
+
+<span class="brand-mark">
+    MSR
+</span>
+
+<span>
+    Muhammad Sohel Rana
+</span>
+
 </a>
+
+
+<ul class="navigation-links">
+
+<li>
+<a href="index.html">
+    Home
+</a>
+</li>
+
+<li>
+<a
+    class="active"
+    href="Publications.html"
+>
+    Publications
+</a>
+</li>
+
+<li>
+<a href="Teaching.html">
+    Teaching
+</a>
+</li>
+
+<li>
+<a href="Industrial Experience.html">
+    Industrial Experience
+</a>
+</li>
+
+<li>
+<a
+    href="Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Resume
+</a>
+</li>
+
+<li>
+<a
+    class="nav-button"
+    href="CV (Updated).pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    View CV
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<!-- =======================================================
+     HERO
+======================================================== -->
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div>
+
+<span class="eyebrow">
+    Research Portfolio
+</span>
+
+<h1>
+    Publications
+</h1>
+
+<p>
+    My research develops computational and statistical
+    methods for optimal transport, Wasserstein geometry,
+    dimensionality reduction, matrix recovery, federated
+    learning, and scientific data analysis.
 </p>
-      </section>
-    </div>
 
-    <!-- Right Column: Content -->
-    <div class="right-column">
+</div>
 
-      <header>
-        <h1>Publications</h1>
-      </header>
 
-      <section id="Publications">
-        <h2>🔬 Publications</h2>
+<div
+    class="visual"
+    aria-hidden="true"
+>
 
-        <h3>📄 Submitted</h3>
-        <ul class="publication-list">
-          <li>
-            Muhammad Rana and Keaton Hamm,
-            <i>Neighbor Embeddings Using Unbalanced Optimal Transport Metrics</i>.
-          </li>
+<div class="paper"></div>
 
-          <li>
-            Muhammad Rana, Phuong Trinh, Ryan Bui, and Keaton Hamm,
-            <i>On Wasserstein Distance Neighbor Embeddings</i>.
-          </li>
+</div>
 
-          <li>
-            Md Abul Hossain Mamun and Muhammad Rana,
-            <i>Factors Influencing Women’s Total Children Ever Born and Current Contraceptive Use in Urban and Rural Areas: Evidence from BDHS 2017--18</i>.
-          </li>
-        </ul>
+</div>
 
-        <h3>📘 Conference Papers</h3>
-        <ul class="publication-list">
-          <li>
-            Muhammad Rana, Abiy Tasissa, HanQin Cai, Yakov Gavriyelov, and Keaton Hamm,
-            <i>Recovering Wasserstein Distance Matrices from Few Measurements</i>,
-            Proceedings of
-            <a href="https://2026.ieeeicassp.org/" target="_blank">
-              IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026)
-            </a>.
-          </li>
+</section>
 
-          <li>
-            Zahidur Talukder, Muhammad Rana, Keaton Hamm, and Mohammad Islam,
-            <i>Empowering Clients: Self-Adaptive Federated Learning for Data Quality Challenges</i>,
-            <a href="https://services.conferences.computer.org/2025/edge/" target="_blank">
-              IEEE EDGE 2025
-            </a>.
-          </li>
 
-        <li>
-        Md. Mehedi Hasan, Mohammad Abdul Halim, Muhammad Rana, 
-        Salma Yeasmin Jannaty, and M. J. Uddin, 
-        <i>Nanofluid Natural Convection in Trapezoidal Annuli: Comparative Effects of Triangular, Circular, and Square Inner Walls</i>, 
-        <a href="https://www.sciencedirect.com/science/article/pii/S2666202725004070" target="_blank">
-        International Journal of Thermofluids (Elsevier)
-        </a>.
-        </li>
-        </ul>
+<!-- =======================================================
+     MAIN LAYOUT
+======================================================== -->
 
-        <h3>📕 Manuscripts in Preparation</h3>
-        <ul class="publication-list">
-          <li>Additional manuscripts will be listed here.</li>
-        </ul>
-      </section>
+<div class="layout">
 
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>Thanks for visiting!</p>
-  </footer>
+<!-- ===================================================
+     SIDEBAR
+=================================================== -->
+
+<aside class="sidebar">
+
+
+<section class="card side-card">
+
+<h2>
+    Publication Categories
+</h2>
+
+
+<ul class="side-nav">
+
+<li>
+
+<a href="#conference">
+
+<span>
+    Conference Papers
+</span>
+
+<span class="count">
+    3
+</span>
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#review">
+
+<span>
+    Under Review / Submitted
+</span>
+
+<span class="count">
+    3
+</span>
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#other">
+
+<span>
+    Other Publications
+</span>
+
+<span class="count">
+    1
+</span>
+
+</a>
+
+</li>
+
+</ul>
+
+</section>
+
+
+<section class="card side-card">
+
+<h2>
+    Research Profiles
+</h2>
+
+<p>
+    View citation information, code, and additional
+    research materials.
+</p>
+
+
+<a
+    class="mini"
+    href="https://scholar.google.com"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Google Scholar
+</a>
+
+
+<a
+    class="mini"
+    href="https://github.com/msr3384"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    GitHub
+</a>
+
+
+<a
+    class="mini"
+    href="CV (Updated).pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Full CV
+</a>
+
+</section>
+
+</aside>
+
+
+<!-- ===================================================
+     PUBLICATIONS
+=================================================== -->
+
+<main>
+
+
+<!-- Conference Papers -->
+
+<section
+    id="conference"
+    class="card section"
+>
+
+<h2>
+    Conference Papers
+</h2>
+
+<p class="intro">
+    Peer-reviewed and proceedings publications in signal
+    processing, machine learning, and distributed learning.
+</p>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status proceedings">
+    Proceedings
+</span>
+
+<span class="year">
+    2026
+</span>
+
+</div>
+
+
+<h3>
+    Recovering Wasserstein Distance Matrices from
+    Few Measurements
+</h3>
+
+
+<p class="authors">
+    <strong>Muhammad Sohel Rana</strong>,
+    Abiy Tasissa, HanQin Cai, Yakov Gavriyelov,
+    and Keaton Hamm
+</p>
+
+
+<p class="venue">
+    Proceedings of IEEE ICASSP 2026
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    PDF
+</a>
+
+<a
+    class="plink"
+    href="#"
+>
+    Code
+</a>
+
+</div>
+
+</article>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status proceedings">
+    Conference Submission
+</span>
+
+<span class="year">
+    2026
+</span>
+
+</div>
+
+
+<h3>
+    Neighbor Embeddings Using Unbalanced Optimal
+    Transport Metrics
+</h3>
+
+
+<p class="authors">
+    <strong>Muhammad Sohel Rana</strong>
+    and Keaton Hamm
+</p>
+
+
+<p class="venue">
+    IEEE ICASSP 2026 submission
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    Manuscript
+</a>
+
+</div>
+
+</article>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status published">
+    Published
+</span>
+
+<span class="year">
+    2025
+</span>
+
+</div>
+
+
+<h3>
+    Empowering Clients: Self-Adaptive Federated
+    Learning for Data Quality Challenges
+</h3>
+
+
+<p class="authors">
+    Zahidur Talukder,
+    <strong>Muhammad Sohel Rana</strong>,
+    Keaton Hamm, and Mohammad Islam
+</p>
+
+
+<p class="venue">
+    IEEE EDGE 2025
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    Paper
+</a>
+
+</div>
+
+</article>
+
+</section>
+
+
+<!-- Under Review and Submitted -->
+
+<section
+    id="review"
+    class="card section"
+>
+
+<h2>
+    Under Review and Submitted
+</h2>
+
+<p class="intro">
+    Current manuscripts on optimal-transport embeddings,
+    scalable learning, and federated learning.
+</p>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status review">
+    Under Review
+</span>
+
+<span class="year">
+    Current
+</span>
+
+</div>
+
+
+<h3>
+    On Wasserstein Distance Neighbor Embeddings
+</h3>
+
+
+<p class="authors">
+    <strong>Muhammad Sohel Rana</strong>,
+    Trinh, Bui, and Keaton Hamm
+</p>
+
+
+<p class="venue">
+    Manuscript under review
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    Preprint
+</a>
+
+</div>
+
+</article>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status submitted">
+    Submitted
+</span>
+
+<span class="year">
+    Current
+</span>
+
+</div>
+
+
+<h3>
+    FedSRC: Federated Learning with Self-Regulating Clients
+</h3>
+
+
+<p class="authors">
+    Co-authored manuscript including
+    <strong>Muhammad Sohel Rana</strong>
+</p>
+
+
+<p class="venue">
+    Submitted manuscript
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    Manuscript
+</a>
+
+</div>
+
+</article>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status submitted">
+    Manuscript
+</span>
+
+<span class="year">
+    Current
+</span>
+
+</div>
+
+
+<h3>
+    Neighbor Embeddings Using Unbalanced Optimal
+    Transport Metrics
+</h3>
+
+
+<p class="authors">
+    <strong>Muhammad Sohel Rana</strong>
+    and Keaton Hamm
+</p>
+
+
+<p class="venue">
+    Research manuscript
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    Manuscript
+</a>
+
+</div>
+
+</article>
+
+</section>
+
+
+<!-- Other Publications -->
+
+<section
+    id="other"
+    class="card section"
+>
+
+<h2>
+    Other Publications
+</h2>
+
+
+<article class="pub">
+
+<div class="topline">
+
+<span class="status published">
+    Published
+</span>
+
+<span class="year">
+    Earlier Work
+</span>
+
+</div>
+
+
+<h3>
+    Nanofluid Natural Convection in Trapezoidal Annuli
+</h3>
+
+
+<p class="authors">
+    Co-authored publication including
+    <strong>Muhammad Sohel Rana</strong>
+</p>
+
+
+<p class="venue">
+    Applied mathematical and computational modeling
+</p>
+
+
+<div class="actions">
+
+<a
+    class="plink"
+    href="#"
+>
+    Publication
+</a>
+
+</div>
+
+</article>
+
+</section>
+
+
+<!-- Important Note -->
+
+<section class="card section">
+
+<h2>
+    Before Publishing
+</h2>
+
+
+<div class="note">
+
+<strong>
+    Replace each
+    <code>href="#"</code>
+</strong>
+
+with the correct PDF, DOI, publisher, arXiv, or
+GitHub link. Also replace the general Google Scholar
+address with your personal profile URL.
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+
+<div class="footer-top">
+
+<div>
+
+<p class="footer-name">
+    Muhammad Sohel Rana
+</p>
+
+<p class="footer-desc">
+    Mathematics · Statistics · Data Science
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="index.html">
+    Home
+</a>
+
+<a href="Publications.html">
+    Publications
+</a>
+
+<a href="Teaching.html">
+    Teaching
+</a>
+
+<a href="mailto:muhammadsohel.rana@mavs.uta.edu">
+    Contact
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+    © 2026 Muhammad Sohel Rana.
+    All rights reserved.
+</p>
+
+<p>
+    Built with HTML and CSS · Hosted on GitHub Pages
+</p>
+
+</div>
+
+</div>
+
+</footer>
 
 </body>
-
 </html>
